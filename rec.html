@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recent</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <style>
+      
+      body {
+        font-family: "", Helvetica, Arial, sans-serif;
+        padding: 20px;
+      }
+      .header {
+        margin-bottom: 20px;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: auto;
+      }
+
+      /*Search-bar*/
+      .search-bar {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .search-bar input:focus {
+        border-color: #222222;
+      }
+
+      /*Card styles*/
+      .card {
+        display: block;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #222222;
+        border-radius: 5px;
+        text-align: left;
+        text-decoration: none;
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+        position: relative;
+      }
+      .card-title {
+        margin-top: 0;
+      }
+      .card-content {
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        border-color: #ffc30b;
+      }
+
+      /*Fav button styles*/
+      .fav-button {
+      position: relative;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      border: none;
+      color: #222222;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .time {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      border: none;
+      color: #222222;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+      /*List styles*/
+      .row {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 20px;
+      }
+
+      /*font colors*/
+      a {
+        color: #222222;
+      }
+      a:hover {
+        color: #222222;
+        text-decoration: underline;
+      }
+      .sub {
+        font-style: italic;
+      }
+      span {
+        color: #ffa200;
+      }
+      span:hover {
+        color: white;
+      }
+
+      /* Navbar styles */
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+        padding: 10px;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .navbar a.right {
+        float: right;
+      }
+      .navbar a:hover {
+        color: #ffa200;
+      }
+
+      /*query*/
+      @media (max-width: 768px) {
+            .card {
+                width: 50%;
+                margin: 10px;
+         }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+                margin: 10px;
+         }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="tes.html">INTERACTIVE<span>NOVEL</span></a>
+      <a href="fav.html">Favorite</a>
+      <a href="rec.html">Recent</a>
+      <a href="#" class="right">Profile</a>
+    </div>
+
+    <div class="container">
+      <div class="row search-bar">
+        <div class="twelve columns">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="u-full-width" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns">
+            <a href="the-lightning-thief.html" class="card">
+                <div class="card-content">
+                    <h3 class="card-title">The Lightning Thief</h3>
+                    <p class="sub">By Rick Riordan</p>
+                </div>
+                <button class="fav-button">'StarLogo'</button>
+                <button class="time">'Recentlogo'</button>
+            </a>
+        </div>
+      </div>
+    </div>  
+    </div>
+  </body>
+</html>
